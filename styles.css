@@ -1,80 +1,84 @@
 :root {
-    --primary-color: #0367f2;
-  }
+  --primary-color: #0367f2;
+}
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    font-family: "Inter", serif;
-  }
-  
-  /* Navigation */
-  nav {
-    background: var(--primary-color);
-    color: white;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Main Content */
-  main {
-    max-width: 800px;
-    margin: 20px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  h2 {
-    color: #444;
-  }
-  
-  hr {
-    border: 0;
-    height: 1px;
-    background: #ccc;
-    margin: 10px 0;
-  }
-  
-  p {
-    margin: 10px 0;
-  }
-  
-  /* Back to Top Link */
-  a[href="#top"] {
-    display: block;
-    text-align: center;
-    margin: 20px 0;
-    font-weight: bold;
-    color: #007bff;
-  }
-  
-  a[href="#top"]:hover {
-    text-decoration: underline;
-  }
-  
-  /* Footer */
-  footer {
-    text-align: center;
-    padding: 10px;
-    background: var(--primary-color);
-    color: white;
-    margin-top: 20px;
-  }
-  
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  font-family: "Inter", serif;
+}
+
+/* Navigation */
+nav {
+  background: var(--primary-color);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  padding-block: 4px;
+}
+
+nav a.active {
+  border-bottom: 1px solid white;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #444;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+/* Back to Top Link */
+a[href="#top"] {
+  display: block;
+  text-align: center;
+  margin: 20px 0;
+  font-weight: bold;
+  color: #007bff;
+}
+
+a[href="#top"]:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: var(--primary-color);
+  color: white;
+  margin-top: 20px;
+}

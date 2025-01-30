@@ -25,6 +25,11 @@ nav a {
   text-decoration: none;
   margin: 0 10px;
   font-weight: bold;
+  padding-block: 4px;
+}
+
+nav a.active {
+    border-bottom: 1px solid white;
 }
 
 nav a:hover {
