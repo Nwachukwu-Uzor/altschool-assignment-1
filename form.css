@@ -34,8 +34,12 @@ nav a.active {
 
 nav a:hover {
   text-decoration: underline;
+  opacity: 0.75;
 }
 
+nav a.active:hover {
+    text-decoration: none;
+}
 .main-container {
   display: grid;
   grid-template-columns: 1fr;
