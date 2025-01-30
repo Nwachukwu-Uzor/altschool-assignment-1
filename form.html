@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <nav id="top">
+      <a href="index.html">Home</a>
+      <a href="form.html">Form</a>
+    </nav>
+    <section class="main-container">
+      <div class="image-section">
+        <img src="./assets/images/banner.png" alt="Register Image" />
+        <h2>Learn highly sought after skills without hassle.</h2>
+        <div class="logos">
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+      <article class="form-container">
+        <h4>Already an Altschooler? <a href="#">Sign in</a></h4>
+        <h2>Sign Up</h2>
+        <p>Take the next steps to apply at AltSchool Africa</p>
+        <form class="application-form">
+          <div class="input_container">
+            <label for="firstName">First Name</label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              placeholder="First Name"
+            />
+          </div>
+          <div class="input_container">
+            <label for="lastName">Last Name</label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              placeholder="Last Name"
+            />
+          </div>
+          <div class="input_container">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email" />
+          </div>
+          <div class="input_container">
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+          <div class="input_container">
+            <label for="dateOfBirth">Date of Birth</label>
+            <input type="date" id="dateOfBirth" name="dateOfBirth" />
+          </div>
+          <div class="input_container">
+            <label for="phoneNumber">Phone Number</label>
+            <input
+              type="phone"
+              id="phoneNumber"
+              name="phoneNumber"
+              placeholder="Phone Number"
+            />
+          </div>
+          <div class="input_container">
+            <label for="countryOfResidence">Country of Residence</label>
+            <input
+              type="text"
+              id="countryOfResidence"
+              name="countryOfResidence"
+              placeholder="City of Residence"
+            />
+          </div>
+          <div class="input_container">
+            <label for="stateOfResidence">State of Residence</label>
+            <input
+              type="text"
+              id="stateOfResidence"
+              name="stateOfResidence"
+              placeholder="State of Residence"
+            />
+          </div>
+          <div class="input_container">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+            />
+          </div>
+          <div class="input_container">
+            <label for="confirmPassword">Confirm Password</label>
+            <input
+              type="confirmPassword"
+              id="confirmPassword"
+              name="confirmPassword"
+              placeholder="Confirm Password"
+            />
+          </div>
+          <div class="input_container full">
+            <label for="info">How did you hear about us?</label>
+            <input
+              type="confirmPassword"
+              id="confirmPassword"
+              name="confirmPassword"
+              placeholder="Optional: let us know how you found us"
+            />
+          </div>
+          <p class="full">
+            By clicking continue, I agree to <a href="#">Terms of Use</a> and
+            acknowledge that I have read the <a href="#">Privacy Policy</a>.
+          </p>
+          <button class="full">
+            Submit <i class="fa-solid fa-arrow-right-long"></i>
+          </button>
+        </form>
+      </article>
+    </section>
+  </body>
+</html>

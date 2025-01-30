@@ -1,0 +1,161 @@
+:root {
+  --primary-color: #0367f2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+}
+
+body {
+  font-family: "Inter", serif;
+}
+
+nav {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: stretch;
+}
+
+@media (min-width: 768px) {
+  .main-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+h4 {
+  font-size: 1.15rem;
+  margin-block: 1rem;
+  font-weight: 600;
+}
+
+h4 a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #718096;
+  font-size: 14px;
+}
+
+.image-section {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .image-section {
+    display: flex;
+    background: linear-gradient(to right, #efefe4 0%, #efefe4 100%);
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+}
+
+.image-section h2 {
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logos a {
+    color: var(--primary-color);
+}
+
+.form-container {
+  padding-inline: 20px;
+  padding-block: 20px;
+}
+
+.application-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .application-form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.application-form .full {
+  grid-column: 1 / -1;
+}
+
+.input_container {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input_container label {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.input_container input,
+.input_container select {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 12px 10px;
+}
+
+.input_container input:focus,
+.input_container select:focus {
+  border: 2px solid var(--primary-color);
+}
+p a {
+  color: var(--primary-color);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.application-form button {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 16px;
+}
